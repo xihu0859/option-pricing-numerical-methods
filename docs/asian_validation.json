@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "production_rows": 6,
+  "replicate_rows": 160,
+  "validation_paths": 2000000,
+  "geometric_price": 6.990731415687477,
+  "beta": 1.0398670171259017,
+  "production_metrics": [
+    {
+      "N": 10000,
+      "price": 7.308935578174156,
+      "se": 0.003503380357675083,
+      "VR": 929.9275721522644,
+      "variance_time_gain": 277.9616242768898
+    },
+    {
+      "N": 100000,
+      "price": 7.31099544429881,
+      "se": 0.0011552335615660657,
+      "VR": 843.7792652445962,
+      "variance_time_gain": 750.9167757679363
+    },
+    {
+      "N": 1000000,
+      "price": 7.312727432990469,
+      "se": 0.00036784384378251,
+      "VR": 835.0045998749985,
+      "variance_time_gain": 674.7093916328715
+    }
+  ],
+  "independent_validation": {
+    "price": 7.312285817103564,
+    "se": 0.00025974041989413493,
+    "ci_low": 7.311776725880571,
+    "ci_high": 7.312794908326556,
+    "variance": 0.13493017145356306
+  },
+  "combined_se_difference": 0.9807049391058014,
+  "timing": "Historical timings retained; variance-time gains recalculated from the saved timings."
+}

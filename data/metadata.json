@@ -1,0 +1,54 @@
+{
+  "seed": 20260914,
+  "parameters": {
+    "S0": 100.0,
+    "r": 0.05,
+    "sigma": 0.25,
+    "T": 1.0,
+    "digital_K": 140,
+    "barrier_K": 100,
+    "H": 130,
+    "asian_K": 100,
+    "asian_m": 12
+  },
+  "digital_exact": 0.0969151344528548,
+  "barrier_reference": 2.223538991350488,
+  "quadrature_error": 2.4686241843491086e-14,
+  "barrier_bridge_quadrature": 2.223538991350492,
+  "python": "3.13.7",
+  "numpy": "2.3.3",
+  "scipy": "1.16.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "timing": "Median of three complete calls; excludes plotting/I-O; same machine. Asian CV includes a fresh 20,000-path pilot in each timed call.",
+  "checks": "Passed: core benchmark and FD checks; independent joint-normal Asian validation; geometric known mean; arithmetic >= geometric; geometric covariance formula.",
+  "extension": {
+    "choice": "B",
+    "question": "Does a geometric control repay its pilot and runtime cost?",
+    "production_counts": [
+      10000,
+      100000,
+      1000000
+    ],
+    "pilot_N": 20000,
+    "replicates": 80,
+    "validation_N": 2000000,
+    "validation_method": "Direct joint-normal log-price sampling using Cholesky factorisation"
+  },
+  "geometric_exact": 6.990731415687477,
+  "asian_beta": 1.0398670171259017,
+  "asian_validation_beta": 1.0393479000437322,
+  "asian_validation": {
+    "price": 7.312285817103564,
+    "se": 0.00025974041989413493,
+    "ci_low": 7.311776725880571,
+    "ci_high": 7.312794908326556,
+    "variance": 0.13493017145356306
+  },
+  "geometric_validation": {
+    "price": 6.9911822951063165,
+    "se": 0.007229789894643673,
+    "ci_low": 6.977011906912815,
+    "ci_high": 7.005352683299818,
+    "variance": 104.53972384138353
+  }
+}

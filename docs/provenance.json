@@ -1,0 +1,13 @@
+{
+  "source_artifacts": [
+    {
+      "artifact": "final Extension B report",
+      "sha256": "27f465517c51df204b8cfa3043287ea7ce2e125a0126da26e0e560bb311e3dc7"
+    },
+    {
+      "artifact": "pricing implementation",
+      "sha256": "d2560c08ae0992d41006682a28da2e97997e626e391c32a0a091b26a6e9ad023"
+    }
+  ],
+  "public_edition": "Portable paths, cleaned metadata/identifiers and documentation; original research results retained."
+}
